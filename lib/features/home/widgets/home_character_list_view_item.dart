@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:main_library/common/ui/app_colors.dart';
-import 'package:main_library/features/character/models/character_ui.dart';
+import 'package:main_library/features/home/models/home_character_ui.dart';
 
-class CharacterListViewItem extends StatelessWidget {
-  const CharacterListViewItem({required CharacterUi character, super.key})
-      : _character = character;
+class HomeCharacterListViewItem extends StatelessWidget {
+  const HomeCharacterListViewItem({
+    required HomeCharacterUi character,
+    super.key,
+  }) : _character = character;
 
-  final CharacterUi _character;
+  final HomeCharacterUi _character;
 
   Widget _buildImage(BuildContext context) {
     return ClipRRect(
