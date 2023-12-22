@@ -10,7 +10,10 @@ part 'home_character_repository.g.dart';
 @lazySingleton
 abstract class HomeCharacterRepository {
   @factoryMethod
-  factory HomeCharacterRepository(Dio dio) => _HomeCharacterRepository(dio);
+  factory HomeCharacterRepository(
+      @Environment('library')  Dio dio,
+  ) =>
+      _HomeCharacterRepository(dio);
 
   @GET('/api/character/')
   Future<PaginationBodyResponse<HomeCharacterResponse>> getCharacter();

@@ -17,9 +17,6 @@ dependencies:
     sdk: flutter
   intl: 0.18.1
 
-  # Routing:
-  auto_route: 7.8.4
-
   # Network:
   dio: 5.3.3
   awesome_dio_interceptor: 1.0.0
@@ -40,7 +37,6 @@ dependencies:
   # Others:
   freezed_annotation: 2.4.1
   json_annotation: 4.8.1
-  flutter_dotenv: 5.1.0
 
 dev_dependencies:
   # Testing:
@@ -55,7 +51,6 @@ dev_dependencies:
   # Code-generator:
   build_runner: 2.4.6
   injectable_generator: 2.4.1
-  auto_route_generator: 7.3.2
   retrofit_generator: 8.0.1
 
   # Others:
@@ -66,6 +61,3 @@ flutter:
   uses-material-design: true
 
   generate: true
-
-  assets:
-    - res/config/
